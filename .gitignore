@@ -1,2 +1,8 @@
 **/xcuserdata/
 **/*.xcworkspace/
+**/obj/
+**/libs/
+**/assets/
+**/bin/
+**/gen/
+**/local.properties

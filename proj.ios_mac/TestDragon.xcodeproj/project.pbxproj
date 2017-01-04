@@ -68,6 +68,8 @@
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
+		FAA3A4471E14E8AE002D37CC /* ReplaceSkin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAA3A4451E14E8AE002D37CC /* ReplaceSkin.cpp */; };
+		FAA3A4481E14E8AE002D37CC /* ReplaceSkin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAA3A4451E14E8AE002D37CC /* ReplaceSkin.cpp */; };
 		FAC79D5E1E08E3070050A827 /* AnimationBaseTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAC79CEA1E08E3070050A827 /* AnimationBaseTest.cpp */; };
 		FAC79D5F1E08E3070050A827 /* AnimationBaseTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAC79CEA1E08E3070050A827 /* AnimationBaseTest.cpp */; };
 		FAC79D601E08E3070050A827 /* CoreElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAC79CEC1E08E3070050A827 /* CoreElement.cpp */; };
@@ -222,6 +224,8 @@
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		FAA3A4451E14E8AE002D37CC /* ReplaceSkin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReplaceSkin.cpp; sourceTree = "<group>"; };
+		FAA3A4461E14E8AE002D37CC /* ReplaceSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplaceSkin.h; sourceTree = "<group>"; };
 		FAC79CEA1E08E3070050A827 /* AnimationBaseTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationBaseTest.cpp; sourceTree = "<group>"; };
 		FAC79CEB1E08E3070050A827 /* AnimationBaseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationBaseTest.h; sourceTree = "<group>"; };
 		FAC79CEC1E08E3070050A827 /* CoreElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoreElement.cpp; sourceTree = "<group>"; };
@@ -288,39 +292,6 @@
 		FAC79D341E08E3070050A827 /* Knight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Knight.h; sourceTree = "<group>"; };
 		FAC79D351E08E3070050A827 /* PerformanceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerformanceTest.cpp; sourceTree = "<group>"; };
 		FAC79D361E08E3070050A827 /* PerformanceTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformanceTest.h; sourceTree = "<group>"; };
-		FAC79D381E08E3070050A827 /* allocators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = allocators.h; sourceTree = "<group>"; };
-		FAC79D391E08E3070050A827 /* document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = document.h; sourceTree = "<group>"; };
-		FAC79D3A1E08E3070050A827 /* encodedstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encodedstream.h; sourceTree = "<group>"; };
-		FAC79D3B1E08E3070050A827 /* encodings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encodings.h; sourceTree = "<group>"; };
-		FAC79D3D1E08E3070050A827 /* en.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = en.h; sourceTree = "<group>"; };
-		FAC79D3E1E08E3070050A827 /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
-		FAC79D3F1E08E3070050A827 /* filereadstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filereadstream.h; sourceTree = "<group>"; };
-		FAC79D401E08E3070050A827 /* filewritestream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filewritestream.h; sourceTree = "<group>"; };
-		FAC79D411E08E3070050A827 /* fwd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fwd.h; sourceTree = "<group>"; };
-		FAC79D431E08E3070050A827 /* biginteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = biginteger.h; sourceTree = "<group>"; };
-		FAC79D441E08E3070050A827 /* diyfp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = diyfp.h; sourceTree = "<group>"; };
-		FAC79D451E08E3070050A827 /* dtoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtoa.h; sourceTree = "<group>"; };
-		FAC79D461E08E3070050A827 /* ieee754.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ieee754.h; sourceTree = "<group>"; };
-		FAC79D471E08E3070050A827 /* itoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itoa.h; sourceTree = "<group>"; };
-		FAC79D481E08E3070050A827 /* meta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meta.h; sourceTree = "<group>"; };
-		FAC79D491E08E3070050A827 /* pow10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pow10.h; sourceTree = "<group>"; };
-		FAC79D4A1E08E3070050A827 /* regex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regex.h; sourceTree = "<group>"; };
-		FAC79D4B1E08E3070050A827 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
-		FAC79D4C1E08E3070050A827 /* strfunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strfunc.h; sourceTree = "<group>"; };
-		FAC79D4D1E08E3070050A827 /* strtod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strtod.h; sourceTree = "<group>"; };
-		FAC79D4E1E08E3070050A827 /* swap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swap.h; sourceTree = "<group>"; };
-		FAC79D4F1E08E3070050A827 /* istreamwrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = istreamwrapper.h; sourceTree = "<group>"; };
-		FAC79D501E08E3070050A827 /* memorybuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memorybuffer.h; sourceTree = "<group>"; };
-		FAC79D511E08E3070050A827 /* memorystream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memorystream.h; sourceTree = "<group>"; };
-		FAC79D551E08E3070050A827 /* ostreamwrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ostreamwrapper.h; sourceTree = "<group>"; };
-		FAC79D561E08E3070050A827 /* pointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pointer.h; sourceTree = "<group>"; };
-		FAC79D571E08E3070050A827 /* prettywriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prettywriter.h; sourceTree = "<group>"; };
-		FAC79D581E08E3070050A827 /* rapidjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rapidjson.h; sourceTree = "<group>"; };
-		FAC79D591E08E3070050A827 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
-		FAC79D5A1E08E3070050A827 /* schema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = schema.h; sourceTree = "<group>"; };
-		FAC79D5B1E08E3070050A827 /* stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream.h; sourceTree = "<group>"; };
-		FAC79D5C1E08E3070050A827 /* stringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringbuffer.h; sourceTree = "<group>"; };
-		FAC79D5D1E08E3070050A827 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -458,6 +429,8 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FAA3A4451E14E8AE002D37CC /* ReplaceSkin.cpp */,
+				FAA3A4461E14E8AE002D37CC /* ReplaceSkin.h */,
 				FAC79CEA1E08E3070050A827 /* AnimationBaseTest.cpp */,
 				FAC79CEB1E08E3070050A827 /* AnimationBaseTest.h */,
 				FAC79CEC1E08E3070050A827 /* CoreElement.cpp */,
@@ -469,7 +442,6 @@
 				FAC79D341E08E3070050A827 /* Knight.h */,
 				FAC79D351E08E3070050A827 /* PerformanceTest.cpp */,
 				FAC79D361E08E3070050A827 /* PerformanceTest.h */,
-				FAC79D371E08E3070050A827 /* rapidjson */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 			);
@@ -667,62 +639,6 @@
 			path = textures;
 			sourceTree = "<group>";
 		};
-		FAC79D371E08E3070050A827 /* rapidjson */ = {
-			isa = PBXGroup;
-			children = (
-				FAC79D381E08E3070050A827 /* allocators.h */,
-				FAC79D391E08E3070050A827 /* document.h */,
-				FAC79D3A1E08E3070050A827 /* encodedstream.h */,
-				FAC79D3B1E08E3070050A827 /* encodings.h */,
-				FAC79D3C1E08E3070050A827 /* error */,
-				FAC79D3F1E08E3070050A827 /* filereadstream.h */,
-				FAC79D401E08E3070050A827 /* filewritestream.h */,
-				FAC79D411E08E3070050A827 /* fwd.h */,
-				FAC79D421E08E3070050A827 /* internal */,
-				FAC79D4F1E08E3070050A827 /* istreamwrapper.h */,
-				FAC79D501E08E3070050A827 /* memorybuffer.h */,
-				FAC79D511E08E3070050A827 /* memorystream.h */,
-				FAC79D551E08E3070050A827 /* ostreamwrapper.h */,
-				FAC79D561E08E3070050A827 /* pointer.h */,
-				FAC79D571E08E3070050A827 /* prettywriter.h */,
-				FAC79D581E08E3070050A827 /* rapidjson.h */,
-				FAC79D591E08E3070050A827 /* reader.h */,
-				FAC79D5A1E08E3070050A827 /* schema.h */,
-				FAC79D5B1E08E3070050A827 /* stream.h */,
-				FAC79D5C1E08E3070050A827 /* stringbuffer.h */,
-				FAC79D5D1E08E3070050A827 /* writer.h */,
-			);
-			path = rapidjson;
-			sourceTree = "<group>";
-		};
-		FAC79D3C1E08E3070050A827 /* error */ = {
-			isa = PBXGroup;
-			children = (
-				FAC79D3D1E08E3070050A827 /* en.h */,
-				FAC79D3E1E08E3070050A827 /* error.h */,
-			);
-			path = error;
-			sourceTree = "<group>";
-		};
-		FAC79D421E08E3070050A827 /* internal */ = {
-			isa = PBXGroup;
-			children = (
-				FAC79D431E08E3070050A827 /* biginteger.h */,
-				FAC79D441E08E3070050A827 /* diyfp.h */,
-				FAC79D451E08E3070050A827 /* dtoa.h */,
-				FAC79D461E08E3070050A827 /* ieee754.h */,
-				FAC79D471E08E3070050A827 /* itoa.h */,
-				FAC79D481E08E3070050A827 /* meta.h */,
-				FAC79D491E08E3070050A827 /* pow10.h */,
-				FAC79D4A1E08E3070050A827 /* regex.h */,
-				FAC79D4B1E08E3070050A827 /* stack.h */,
-				FAC79D4C1E08E3070050A827 /* strfunc.h */,
-				FAC79D4D1E08E3070050A827 /* strtod.h */,
-				FAC79D4E1E08E3070050A827 /* swap.h */,
-			);
-			path = internal;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -888,6 +804,7 @@
 				FAC79D741E08E3070050A827 /* CCSlot.cpp in Sources */,
 				FAC79D761E08E3070050A827 /* CCTextureData.cpp in Sources */,
 				FAC79D841E08E3070050A827 /* FrameData.cpp in Sources */,
+				FAA3A4471E14E8AE002D37CC /* ReplaceSkin.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				FAC79D661E08E3070050A827 /* TimelineState.cpp in Sources */,
 				FAC79D621E08E3070050A827 /* Animation.cpp in Sources */,
@@ -918,6 +835,7 @@
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				FAC79D731E08E3070050A827 /* CCFactory.cpp in Sources */,
 				FAC79D5F1E08E3070050A827 /* AnimationBaseTest.cpp in Sources */,
+				FAA3A4481E14E8AE002D37CC /* ReplaceSkin.cpp in Sources */,
 				FAC79D6B1E08E3070050A827 /* Armature.cpp in Sources */,
 				FAC79D8F1E08E3080050A827 /* HelloDragonBones.cpp in Sources */,
 				FAC79D751E08E3070050A827 /* CCSlot.cpp in Sources */,
