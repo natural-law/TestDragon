@@ -48,12 +48,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
     FileUtils::getInstance()->addSearchPath("res");
 
     // create a scene. it's an autorelease object
-    //auto scene = HelloDragonBones::createScene();
+    auto scene = HelloDragonBones::createScene();
     //auto scene = PerformanceTest::createScene();
     //auto scene = AnimationBaseTest::createScene();
     //auto scene = KnightGame::createScene();
     //auto scene = CoreElementGame::createScene();
-    auto scene = ReplaceSkin::createScene();
+//    auto scene = ReplaceSkin::createScene();
 
     // run
     director->runWithScene(scene);
